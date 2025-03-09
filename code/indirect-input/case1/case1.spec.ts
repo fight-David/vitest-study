@@ -9,7 +9,7 @@ import { userAge, fetchUserAge } from "./user";
 // 编译时会提高顶部
 vi.mock("./user", () => {
   return {
-    // userAge: () => 2,
+    userAge: () => 2,
     fetchUserAge: () => Promise.resolve(2),
   };
 });
