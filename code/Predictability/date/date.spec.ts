@@ -20,7 +20,6 @@ describe("date", () => {
     expect(result).toBe("happy");
   });
 
-
   it("should be happy when it's Friday", () => {
     // 月份用 0 开始
     vi.setSystemTime(new Date(2025, 2, 8))

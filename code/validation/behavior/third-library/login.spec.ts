@@ -6,7 +6,7 @@ import { cxrLogin } from "cxr";
 vi.mock("cxr", () => {
   return {
     // cxrLogin: vi.fn(), // mock 必须要记录和验证
-    // cxrLogin: ()=>2  // stub 只是去提供值，不负责记录和验证
+    // cxrLogin: ()=> 2  // stub 只是去提供值，不负责记录和验证
     // cxrLogin: vi.fn().mockReturnValue(true),
     cxrLogin: vi.fn(() => true)
   };
