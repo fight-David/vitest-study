@@ -20,7 +20,7 @@ test.only("add todo", async () => {
 
   // 验证
   expect(todoStore.todos[0].title).toBe(title);
-});
+}); 
 
 test("remove todo", async () => {
   server.use(mockAddTodo(), mockRemoveTodo());

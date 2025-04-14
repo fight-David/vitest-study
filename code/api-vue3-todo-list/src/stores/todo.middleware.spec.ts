@@ -25,8 +25,6 @@ test("should add todo to the list when successful", async () => {
 
   // 验证
   expect(todoStore.todos[0].title).toBe(title);
-
-
 });
 
 test("should not be added todo when network is error", async () => {
