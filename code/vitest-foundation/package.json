@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test-run": "vitest run",
     "debug:test": "vitest --inspect-brk --single-thread"
   },
   "keywords": [],

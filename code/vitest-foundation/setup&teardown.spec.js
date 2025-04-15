@@ -8,7 +8,7 @@ import {
 } from "vitest";
 
 // 1. 他们的执行顺序
-// beforeAll beforeEach test afterEach  afterAll
+// beforeAll beforeEach test afterEach afterAll
 
 // 只执行一次  在最开始的时候
 // 数据库的连接
@@ -38,12 +38,14 @@ test("second ", () => {
   console.log("second");
 });
 
-// reset
+// reset 拆卸
 afterEach(() => {
   console.log("after each");
 });
 
 describe("sub", () => {
+  // 先执行外面的beforeEach  再执行里面的beforeEach
+  // 先执行里面的afterEach 再执行外面的afterEach
   beforeEach(() => {
     console.log("sub: before each");
   });

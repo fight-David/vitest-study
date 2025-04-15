@@ -12,14 +12,14 @@ describe("add", () => {
     expect(user.name).toBe("cxr");
   });
 
-  describe('sub', () => {
+  // describe('sub', () => {
     
-  })
+  // })
 
 
-  describe('add', () => {
+  // describe('add', () => {
     
-  })
+  // })
 });
 
 describe("remove", () => {
