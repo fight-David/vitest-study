@@ -2,7 +2,7 @@
   <div>
     <h1>{{ todo.title }}</h1>
     <div>
-      <!-- <button @click="todoStore.removeTodo(todo.id)">remove</button> -->
+      <button @click="todoStore.removeTodo(todo.id)">remove</button>
     </div>
   </div>
 </template>

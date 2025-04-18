@@ -12,6 +12,3 @@ export function fetchUserAge(): Promise<number> {
     }, 0);
   });
 }
-
-
-

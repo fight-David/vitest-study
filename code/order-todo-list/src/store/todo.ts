@@ -6,7 +6,7 @@ interface Todo {
   id: number;
 }
 
-function createTodo(title) {
+function createTodo(title: string) {
   const todo: Todo = {
     title,
     id: id++,

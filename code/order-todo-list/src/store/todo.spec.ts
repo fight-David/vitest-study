@@ -1,28 +1,29 @@
-import { expect, it, describe, beforeEach } from "vitest";
-import { setActivePinia, createPinia } from "pinia";
-import { useTodoStore } from "./todo";
+import { expect, it, beforeEach, describe } from 'vitest'
+import { useTodoStore } from './todo'
+import { setActivePinia, createPinia } from 'pinia'
 
-describe("todo", () => {
+
+describe('todo', () => {
   beforeEach(() => {
-    setActivePinia(createPinia());
-  });
-  it("add todo to list ", () => {
-    const todoStore = useTodoStore();
-    todoStore.addTodo("heihei");
-    expect(todoStore.todos[0].title).toEqual("heihei");
-  });
-  it("add todo with reverse command", () => {
-    const todoStore = useTodoStore();
-    todoStore.addTodo("reverse:heihei");
-    expect(todoStore.todos[0].title).toEqual("iehieh");
-  });
+    setActivePinia(createPinia())
+  })
+  it('add todo', async () => {
+    const todoStore = useTodoStore()
+    todoStore.addTodo('heihei')
+    expect(todoStore.todos[0].title).toBe('heihei')
+  })
 
-  it("remove todo", () => {
-    const todoStore = useTodoStore();
-    const todo = todoStore.addTodo("heihei");
+  it('add todo with reverse command', async () => {
+    const todoStore = useTodoStore()
+    todoStore.addTodo('reverse:hello')
+    expect(todoStore.todos[0].title).toBe('olleh')
+  })
 
-    todoStore.removeTodo(todo.id)
-
+  it('remove todo', async () => {
+    const todoStore = useTodoStore()
+    const todo = todoStore.addTodo('heihei')
+    todoStore.removeTodo(todo!.id)
     expect(todoStore.todos.length).toBe(0)
-  });
-});
+  })
+
+})
