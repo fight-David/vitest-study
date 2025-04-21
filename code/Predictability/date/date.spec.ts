@@ -30,7 +30,7 @@ describe("date", () => {
   });
 
   it('third', () => {
-    checkFriday()
+    expect(checkFriday()).toBe("sad");
   })
 
 });

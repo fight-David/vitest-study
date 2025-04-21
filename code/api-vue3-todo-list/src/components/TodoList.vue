@@ -22,7 +22,7 @@ import { useTodoStore } from "../stores/todo";
 const todoStore = useTodoStore();
 const newTodo = ref("");
 
-todoStore.updateTodoList()
+todoStore.updateTodoList();
 
 function handleAddTodo() {
   todoStore.addTodo(newTodo.value);

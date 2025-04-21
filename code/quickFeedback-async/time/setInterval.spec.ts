@@ -9,6 +9,7 @@ describe("setInterval", () => {
 
     // vi.advanceTimersToNextTimer()
     // vi.advanceTimersToNextTimer() // 上一个快进
+    
     vi.advanceTimersByTime(1100) // 把时间快进
 
     expect(console.log).toBeCalledWith('hi')

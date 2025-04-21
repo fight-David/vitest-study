@@ -9,10 +9,11 @@ describe("di - class", () => {
   //       }
   //     }
 
-  //     const readAndProcessFile = new ReadAndProcessFile(new StubFileReader());
+  //     const readAndProcessFile = new ReadAndProcessFile(new FileReader());
 
   //     expect(readAndProcessFile.run("./test")).toBe("cxr->unit test");
   //   });
+
   //   it("属性", () => {
   //     class StubFileReader implements FileReader {
   //       read(filePath: string): string {
