@@ -31,6 +31,7 @@ describe("emailValidator", () => {
   //     expect(emailValidator(email)).toBe(expected);
   //   });
 
+  // 常用的写法
   //   it.each([{ email: "valid-email@example.com", expected: true }])(
   //     "should return $email when email is $expected",
   //     ({ email, expected }) => {
