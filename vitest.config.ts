@@ -1,10 +1,10 @@
-import { defineConfig } from "vitest/config";
+// import { defineConfig } from "vitest/config";
 
-export default defineConfig({
-  test: {
-    environment: "cxr",
-  },
-});
+// export default defineConfig({
+//   test: {
+//     environment: "happy-dom",
+//   },
+// });
 
-// function 
-// 1. add remove fileter
+// // function 
+// // 1. add remove fileter

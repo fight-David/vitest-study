@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 import { getName } from "./browser-env";
-// import {Window} from 'happy-dom'; // or jsdom
+// import { Window } from 'happy-dom'; // or jsdom
 
 test("browser-env", () => {
 

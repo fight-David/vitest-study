@@ -1,5 +1,9 @@
 {
+	"scripts": {
+		"test": "vitest"
+	},
 	"devDependencies": {
+		"vitest": "^3.0.7",
 		"happy-dom": "^9.20.3"
 	}
 }
